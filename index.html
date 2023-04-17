@@ -14,24 +14,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/item-alignment.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/Portfolio-with-Category-switcher.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="height: 40px;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#" style="padding-bottom: 0px;padding-top: 0px;margin-right: 0px;padding-right: 10px;padding-left: 10px;"><span><strong>Anfibio</strong></span></a>
-            <div class="dropdown"><a class="dropdown-toggle d-flex align-items-center" aria-expanded="false" data-bs-toggle="dropdown" id="nav_dropdown" href="#" style="height: var(--custom-toolbar-height);font-size: 20px;padding-left: 10px;padding-right: 10px;">Clases</a>
-                <div class="dropdown-menu" style="margin-top: 0;"><a class="dropdown-item" href="#">Audio</a><a class="dropdown-item" href="#">Clases</a><a class="dropdown-item" href="#">Portfolio</a></div>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container"><a class="navbar-brand d-flex align-items-center hoverable" href="#" style="padding-bottom: 0px;padding-top: 0px;margin-right: 0px;padding-right: 10px;padding-left: 10px;max-width: 100px;"><span><strong>Anfibio</strong></span></a>
+            <div class="dropdown"><a class="dropdown-toggle hoverable" aria-expanded="false" data-bs-toggle="dropdown" id="nav_dropdown" href="#" style="height: var(--custom-toolbar-height);font-size: 20px;padding-left: 10px;padding-right: 10px;width: 148.297px;">Clases</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#">Audio</a><a class="dropdown-item" href="#">Clases</a><a class="dropdown-item" href="#">Portfolio</a></div>
             </div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-5">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active d-flex align-items-center" href="#">Info</a></li>
-                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Cursos</a></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Utilidades</a></li>
-                </ul><a class="btn btn-primary ms-md-2" role="button" href="#" style="border-radius: 2px;">Ingresa</a>
+            <div class="collapse navbar-collapse main-navbar" id="navcol-5">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active hoverable" href="#">Info</a></li>
+                    <li class="nav-item"><a class="nav-link hoverable" href="#">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link text-center hoverable" href="#">Utilidades</a></li>
+                    <li class="nav-item special-nav-item">
+                        <div><a class="btn btn-primary ms-md-2 btn-gradient" role="button" href="#" style="border-radius: 2px;">Ingresa</a></div>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -43,19 +46,19 @@
                         <div style="max-width: 350px;">
                             <h1><strong>Anfibio</strong></h1>
                             <hr>
-                            <p class="my-3">Escuela de Música y Sonido</p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Prueba Gratis</a><a class="btn btn-outline-primary btn-lg" role="button" href="#">Explora</a>
+                            <p class="my-3">Escuela de Música y Sonido</p><a class="btn btn-primary btn-lg me-2 btn-highlight" role="button" href="#">Prueba Gratis</a><a class="btn btn-outline-primary btn-lg btn-highlight" role="button" href="#">Explora</a>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center"><img src="assets/img/rana.svg" style="height: 80%;width: 80%;display: block;margin: auto;" width="436" height="428"></div>
+                    <div class="col d-flex align-items-center"><img src="assets/img/logo%20rana%202.0%20normal.svg" style="height: 80%;width: 80%;display: block;margin: auto;filter: drop-shadow(0 10px 20px rgb(20,20,40));" width="436" height="428"></div>
                 </div>
             </div>
         </div>
     </section>
     <section></section>
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio fullscreen-section">
         <div class="container">
             <div class="section-title pt-4 pb-4">
-                <div style="width: 500px;margin: auto;">
+                <div style="margin: auto;max-width: 500px;">
                     <h2 class="text-uppercase">Cursos</h2>
                     <hr>
                 </div>
@@ -91,35 +94,35 @@
             </div>
         </div>
     </section>
-    <footer class="text-center footer" style="margin-top: 26px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Ubicación</h4>
-                    <p>Moreno, Pcia. de Buenos Aires, Argentina<br>Pocitos, Montevideo, Uruguay</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase">Redes</h4>
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4 class="text-uppercase mb-4">Sobre anfibio</h4>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead mb-0"></p>
+    <div style="background: var(--bs-gray-900);padding-top: 1px;">
+        <footer class="text-center footer" style="margin-top: 26px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Ubicación</h4>
+                        <p>Moreno, Pcia. de Buenos Aires, Argentina<br>Pocitos, Montevideo, Uruguay</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase">Redes</h4>
+                        <ul class="list-inline text-center social-btn">
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-uppercase mb-4">Sobre Anfibio</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead mb-0"></p>
+                    </div>
                 </div>
             </div>
+        </footer>
+        <div class="text-center text-white copyright py-4">
+            <div class="container"><small>Copyright © Anfibio 2023</small></div>
         </div>
-    </footer>
-    <div class="text-center text-white copyright py-4">
-        <div class="container"><small>Copyright © Anfibio 2023</small></div>
     </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
