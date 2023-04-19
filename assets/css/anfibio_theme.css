@@ -166,9 +166,9 @@ hr {
   --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --bs-dropdown-link-color: #212529;
   --bs-dropdown-link-hover-color: var(--bs-primary);
-  --bs-dropdown-link-hover-bg: var(--bs-gray-900);
-  --bs-dropdown-link-active-color: var(--bs-body-bg);
-  --bs-dropdown-link-active-bg: var(--bs-light);
+  --bs-dropdown-link-hover-bg: var(--bs-gray-800);
+  --bs-dropdown-link-active-color: var(--bs-primary-light);
+  --bs-dropdown-link-active-bg: var(--bs-gray-900);
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -212,5 +212,13 @@ hr {
 
 .dropdown-menu .dropdown-item {
   height: 45px;
+  font-size: 18px;
+}
+
+.anfibio-logo {
+  background: -webkit-linear-gradient(right, #3DA7F3, #B93CE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*color: var(--bs-border-color-translucent);*/
 }
 

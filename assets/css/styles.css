@@ -63,9 +63,6 @@
   }
 }
 
-a {
-}
-
 .dropdown {
   height: var(--custom-toolbar-height);
   align-content: center;
@@ -73,6 +70,8 @@ a {
 
 .navbar-brand {
   height: var(--custom-toolbar-height);
+  font-size: 25px;
+  max-width: 128px;
 }
 
 .navbar-toggler {
@@ -102,5 +101,9 @@ a {
 
 .fullscreen-section {
   min-height: 100vh;
+}
+
+.portfolio-info {
+  text-overflow: ellipsis;
 }
 
